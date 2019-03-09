@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Source\PenAudio-server" t="IncludeFlat">
+      <e p="PenAudio-server.sln" t="IncludeFlat" />
+    </e>
+    <e p="C:\Users\marcin.maleszewski\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\marcin.maleszewski\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_PenAudio-server.611848482.00" t="ExcludeRecursive" />
+  </component>
+</project>
