@@ -2,16 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="586524b5-45ab-48b0-bb3d-cde616b978b3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PenAudio-server/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PenAudio-server/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PenAudio-server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PenAudio-server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/PenAudio-server/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/PenAudio-server/v15/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/PenAudio-server/v15/Server/sqlite3/storage.ide-shm" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/PenAudio-server/v15/Server/sqlite3/storage.ide-shm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/PenAudio-server/v15/Server/sqlite3/storage.ide-wal" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/PenAudio-server/v15/Server/sqlite3/storage.ide-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PenAudio-server.sln" beforeDir="false" afterPath="$PROJECT_DIR$/PenAudio-server.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PenAudio-server/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PenAudio-server/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PenAudio-server.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PenAudio.Tests/PenAudio.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PenAudio.Tests/PenAudio.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PenAudio.Tests/obj/Debug/netcoreapp2.1/PenAudio.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PenAudio.Tests/obj/Debug/netcoreapp2.1/PenAudio.Tests.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PenAudio.Tests/obj/Debug/netcoreapp2.1/PenAudio.Tests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PenAudio.Tests/obj/Debug/netcoreapp2.1/PenAudio.Tests.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PenAudio.Tests/obj/Debug/netcoreapp2.1/PenAudio.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PenAudio.Tests/obj/Debug/netcoreapp2.1/PenAudio.Tests.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PenAudio.Tests/obj/PenAudio.Tests.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PenAudio.Tests/obj/PenAudio.Tests.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PenAudio.Tests/obj/PenAudio.Tests.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/PenAudio.Tests/obj/PenAudio.Tests.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PenAudio.Tests/obj/PenAudio.Tests.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/PenAudio.Tests/obj/PenAudio.Tests.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PenAudio.Tests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/PenAudio.Tests/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PenAudio.Tests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/PenAudio.Tests/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerPenAudio/Code/CookieManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerPenAudio/Code/CookieManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerPenAudio/Controllers/AudioController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerPenAudio/Controllers/AudioController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerPenAudio/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerPenAudio/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServerPenAudio/ServerPenAudio.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ServerPenAudio/ServerPenAudio.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServerPenAudio/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServerPenAudio/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnitTest1.cs" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,19 +29,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ServerPenAudio/Controllers/AudioController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="27" column="116" selection-start-line="27" selection-start-column="116" selection-end-line="27" selection-end-column="116" />
+            <state relative-caret-position="371">
+              <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
               <folding>
-                <marker date="1552225802744" expanded="false" signature="6:201" ph="..." />
-                <marker date="1552225802744" expanded="true" signature="239:950" ph="{...}" />
-                <marker date="1552225802744" expanded="true" signature="332:877" ph="{...}" />
-                <marker date="1552225802744" expanded="true" signature="388:412" ph="{...}" />
-                <marker date="1552225802744" expanded="true" signature="495:874" ph="{...}" />
-                <marker date="1552225802744" expanded="true" signature="903:948" ph="{...}" />
+                <marker date="1552256397773" expanded="true" signature="6:329" ph="..." />
+                <marker date="1552256397773" expanded="true" signature="366:1411" ph="{...}" />
+                <marker date="1552256397773" expanded="true" signature="459:1338" ph="{...}" />
+                <marker date="1552256397773" expanded="true" signature="636:699" ph="{...}" />
+                <marker date="1552256397773" expanded="true" signature="756:780" ph="{...}" />
+                <marker date="1552256397773" expanded="true" signature="863:1335" ph="{...}" />
+                <marker date="1552256397773" expanded="true" signature="1364:1409" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AC88FF9-9817-4BE7-8F0D-6AB05B5F222B/03/8bd28f02/WebHostBuilder.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="149" column="29" lean-forward="true" selection-start-line="149" selection-start-column="29" selection-end-line="149" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ED07561A-F00F-4966-8EBC-547EA3E7CE17/87/fdedfa83/ControllerBase.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="63" column="24" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C0A7D087-4053-4171-AB91-0714F1364F0D/e0/151b6427/String.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -41,69 +77,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ServerPenAudio/Code/CookieManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="195">
+              <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
               <folding>
-                <marker date="1552226231461" expanded="true" signature="29:142" ph="{...}" />
-                <marker date="1552226231461" expanded="true" signature="69:140" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PenAudio.Tests/UnitTest1.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
-              <folding>
-                <marker date="1552226289424" expanded="true" signature="39:167" ph="{...}" />
-                <marker date="1552226289424" expanded="true" signature="61:165" ph="{...}" />
-                <marker date="1552226289424" expanded="true" signature="96:104" ph="{...}" />
-                <marker date="1552226289424" expanded="true" signature="136:162" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ServerPenAudio/appsettings.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ServerPenAudio/appsettings.Development.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ServerPenAudio/Properties/launchSettings.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C0A7D087-4053-4171-AB91-0714F1364F0D/16/e2118ae5/ExceptionDispatchInfo.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1335">
-              <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ServerPenAudio/Program.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <marker date="1552215975554" expanded="false" signature="6:255" ph="..." />
-                <marker date="1552215975554" expanded="true" signature="281:555" ph="{...}" />
-                <marker date="1552215975554" expanded="true" signature="305:553" ph="{...}" />
-                <marker date="1552215975554" expanded="true" signature="349:412" ph="{...}" />
+                <marker date="1552256382664" expanded="true" signature="63:466" ph="{...}" />
+                <marker date="1552256382664" expanded="true" signature="103:464" ph="{...}" />
+                <marker date="1552256382664" expanded="true" signature="240:458" ph="{...}" />
+                <marker date="1552256382664" expanded="true" signature="395:446" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -112,27 +92,58 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ServerPenAudio/Startup.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="60">
+              <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
               <folding>
-                <marker date="1552224579046" expanded="false" signature="6:402" ph="..." />
-                <marker date="1552224579046" expanded="true" signature="428:1185" ph="{...}" />
-                <marker date="1552224579046" expanded="true" signature="452:1183" ph="{...}" />
-                <marker date="1552224579046" expanded="true" signature="502:544" ph="{...}" />
-                <marker date="1552224579046" expanded="true" signature="749:837" ph="{...}" />
-                <marker date="1552224579046" expanded="true" signature="1013:1180" ph="{...}" />
-                <marker date="1552224579046" expanded="true" signature="1045:1092" ph="{...}" />
-                <marker date="1552224579046" expanded="true" signature="1100:1129" ph="{...}" />
+                <marker date="1552256601985" expanded="true" signature="6:444" ph="..." />
+                <marker date="1552256601985" expanded="true" signature="469:1336" ph="{...}" />
+                <marker date="1552256601985" expanded="true" signature="493:1334" ph="{...}" />
+                <marker date="1552256601985" expanded="true" signature="543:585" ph="{...}" />
+                <marker date="1552256601985" expanded="true" signature="790:988" ph="{...}" />
+                <marker date="1552256601985" expanded="true" signature="1164:1331" ph="{...}" />
+                <marker date="1552256601985" expanded="true" signature="1196:1243" ph="{...}" />
+                <marker date="1552256601985" expanded="true" signature="1251:1280" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BB91A3B0-EC25-4BCD-83F8-847D0DD10249/24/ebac3d5e/HttpRequestException.cs">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C58A7BDD-3F5A-468A-A1CE-25BBA6F36889/65/7d72e075/ConfigurationProvider.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+            <state relative-caret-position="195">
+              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ServerPenAudio/Code/ConfigurationProvider.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+              <folding>
+                <marker date="1552256605125" expanded="true" signature="68:217" ph="{...}" />
+                <marker date="1552256605125" expanded="true" signature="134:215" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AC88FF9-9817-4BE7-8F0D-6AB05B5F222B/2d/cb1c603c/ConfigureServicesBuilder.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="388">
+              <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AC88FF9-9817-4BE7-8F0D-6AB05B5F222B/8e/98de4844/StartupLoader.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="167" column="10" selection-start-line="167" selection-start-column="10" selection-end-line="167" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -156,28 +167,39 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/ServerPenAudio/Code/CookieManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ServerPenAudio/Startup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/PenAudio.Tests/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ServerPenAudio/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C0A7D087-4053-4171-AB91-0714F1364F0D/e0/151b6427/String.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AC88FF9-9817-4BE7-8F0D-6AB05B5F222B/2d/cb1c603c/ConfigureServicesBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ServerPenAudio/Code/CookieManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9E583682-5CC6-412D-8360-C4C6ADFE4941/75/676a0474/IResponseCookies.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ServerPenAudio/Controllers/AudioController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C0A7D087-4053-4171-AB91-0714F1364F0D/16/e2118ae5/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BB91A3B0-EC25-4BCD-83F8-847D0DD10249/24/ebac3d5e/HttpRequestException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AC88FF9-9817-4BE7-8F0D-6AB05B5F222B/8e/98de4844/StartupLoader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ED07561A-F00F-4966-8EBC-547EA3E7CE17/87/fdedfa83/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PenAudio.Tests/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C58A7BDD-3F5A-468A-A1CE-25BBA6F36889/65/7d72e075/ConfigurationProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PenAudio.Tests/UploadFileTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ServerPenAudio/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ServerPenAudio/Code/Interfaces/IConfigurationProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AC88FF9-9817-4BE7-8F0D-6AB05B5F222B/03/8bd28f02/WebHostBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ServerPenAudio/Code/ConfigurationProvider.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/ServerPenAudio/wwwroot/index.html" />
         <option value="$PROJECT_DIR$/ServerPenAudio/Program.cs" />
-        <option value="$PROJECT_DIR$/ServerPenAudio/Startup.cs" />
-        <option value="$PROJECT_DIR$/ServerPenAudio/Controllers/AudioController.cs" />
+        <option value="$PROJECT_DIR$/PenAudio.Tests/UploadFileTest.cs" />
+        <option value="$PROJECT_DIR$/ServerPenAudio/Code/Interfaces/IConfigurationProvider.cs" />
         <option value="$PROJECT_DIR$/ServerPenAudio/Code/CookieManager.cs" />
+        <option value="$PROJECT_DIR$/ServerPenAudio/Controllers/AudioController.cs" />
+        <option value="$PROJECT_DIR$/ServerPenAudio/Code/ConfigurationProvider.cs" />
+        <option value="$PROJECT_DIR$/ServerPenAudio/Startup.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
-    <option name="y" value="-1088" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1096" />
   </component>
@@ -187,8 +209,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AssemblyExplorer" />
-      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -204,46 +224,40 @@
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="PenAudio-server" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="PenAudio.Tests" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ServerPenAudio" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="PenAudio-server" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ServerPenAudio" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Dependencies" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="PenAudio-server" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="PenAudio.Tests" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ServerPenAudio" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Dependencies" type="24d0babc:SolutionExplorerModelNode" />
               <item name=".NETCoreApp 2.1" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="PenAudio-server" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="PenAudio.Tests" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Dependencies" type="24d0babc:SolutionExplorerModelNode" />
-              <item name=".NETCoreApp 2.1" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Packages" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ServerPenAudio" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Code" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="PenAudio-server" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="PenAudio.Tests" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Dependencies" type="24d0babc:SolutionExplorerModelNode" />
-              <item name=".NETCoreApp 2.1" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="SDK" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="PenAudio-server" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="PenAudio.Tests" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Dependencies" type="24d0babc:SolutionExplorerModelNode" />
-              <item name=".NETCoreApp 2.1" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="SDK" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Microsoft.NETCore.App/2.1.0" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ServerPenAudio" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -296,11 +310,15 @@
       <workItem from="1552215205594" duration="2081000" />
       <workItem from="1552222297722" duration="2627000" />
       <workItem from="1552226351442" duration="116000" />
+      <workItem from="1552251440751" duration="573000" />
+      <workItem from="1552252089737" duration="316000" />
+      <workItem from="1552254951071" duration="389000" />
+      <workItem from="1552255378438" duration="1971000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11300000" />
+    <option name="totallyTimeSpent" value="14549000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -312,29 +330,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-1088" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="NuGet" order="0" visible="true" weight="0.3319149" />
+      <window_info anchor="bottom" id="NuGet" order="0" weight="0.3319149" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unit Tests" order="2" />
       <window_info anchor="bottom" id="REST Client" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="4" weight="0.3287234" />
+      <window_info anchor="bottom" id="Terminal" order="4" visible="true" weight="0.3281412" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Performance Profiler" order="8" />
       <window_info anchor="bottom" id="Message" order="9" />
       <window_info anchor="bottom" id="Find" order="10" />
-      <window_info anchor="bottom" id="Run" order="11" weight="0.32963374" />
-      <window_info anchor="bottom" id="Debug" order="12" weight="0.3861702" />
+      <window_info anchor="bottom" id="Run" order="11" weight="0.32917964" />
+      <window_info anchor="bottom" id="Debug" order="12" weight="0.3852544" />
       <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="15" />
-      <window_info anchor="bottom" id="Build" order="16" weight="0.32553193" />
+      <window_info anchor="bottom" id="Build" order="16" weight="0.32502595" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Errors In Solution" order="1" />
       <window_info anchor="right" id="Database" order="2" />
@@ -342,12 +360,14 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="4" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
-      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="7" visible="true" weight="0.5378465" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="7" visible="true" weight="0.45149255" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -355,33 +375,27 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ServerPenAudio/Controllers/AudioController.cs</url>
+          <line>32</line>
+          <properties documentPath="$PROJECT_DIR$/ServerPenAudio/Controllers/AudioController.cs" initialLine="32">
+            <startOffsets>
+              <option value="866" />
+            </startOffsets>
+            <endOffsets>
+              <option value="867" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ServerPenAudio/wwwroot/index.html" />
     <entry file="file://$PROJECT_DIR$/ServerPenAudio/favicon.ico" />
-    <entry file="file://$PROJECT_DIR$/ServerPenAudio/Controllers/AudioController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" column="116" selection-start-line="27" selection-start-column="116" selection-end-line="27" selection-end-column="116" />
-          <folding>
-            <marker date="1552225802744" expanded="false" signature="6:201" ph="..." />
-            <marker date="1552225802744" expanded="true" signature="239:950" ph="{...}" />
-            <marker date="1552225802744" expanded="true" signature="332:877" ph="{...}" />
-            <marker date="1552225802744" expanded="true" signature="388:412" ph="{...}" />
-            <marker date="1552225802744" expanded="true" signature="495:874" ph="{...}" />
-            <marker date="1552225802744" expanded="true" signature="903:948" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ServerPenAudio/appsettings.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ServerPenAudio/appsettings.Development.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C0A7D087-4053-4171-AB91-0714F1364F0D/16/e2118ae5/ExceptionDispatchInfo.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BB91A3B0-EC25-4BCD-83F8-847D0DD10249/24/ebac3d5e/HttpRequestException.cs" />
     <entry file="file://$PROJECT_DIR$/ServerPenAudio/Properties/launchSettings.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -389,70 +403,162 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C0A7D087-4053-4171-AB91-0714F1364F0D/16/e2118ae5/ExceptionDispatchInfo.cs">
+    <entry file="file://$PROJECT_DIR$/ServerPenAudio/appsettings.Development.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServerPenAudio/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PenAudio.Tests/UnitTest1.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1335">
-          <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+        <state relative-caret-position="30">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <folding>
+            <marker date="1552251374160" expanded="true" signature="39:167" ph="{...}" />
+            <marker date="1552251374160" expanded="true" signature="61:165" ph="{...}" />
+            <marker date="1552251374160" expanded="true" signature="96:104" ph="{...}" />
+            <marker date="1552251374160" expanded="true" signature="136:162" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PenAudio.Tests/UploadFileTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <folding>
+            <marker date="1552255509344" expanded="true" signature="15:72" ph="{...}" />
+            <marker date="1552255509344" expanded="true" signature="49:70" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServerPenAudio/Code/Interfaces/IConfigurationProvider.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+          <folding>
+            <marker date="1552255619002" expanded="true" signature="40:144" ph="{...}" />
+            <marker date="1552255619002" expanded="true" signature="86:142" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ServerPenAudio/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
           <folding>
-            <marker date="1552215975554" expanded="false" signature="6:255" ph="..." />
-            <marker date="1552215975554" expanded="true" signature="281:555" ph="{...}" />
-            <marker date="1552215975554" expanded="true" signature="305:553" ph="{...}" />
-            <marker date="1552215975554" expanded="true" signature="349:412" ph="{...}" />
+            <marker date="1552251374167" expanded="false" signature="6:255" ph="..." />
+            <marker date="1552251374167" expanded="true" signature="281:555" ph="{...}" />
+            <marker date="1552251374167" expanded="true" signature="305:553" ph="{...}" />
+            <marker date="1552251374167" expanded="true" signature="349:412" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ServerPenAudio/Startup.cs">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9E583682-5CC6-412D-8360-C4C6ADFE4941/75/676a0474/IResponseCookies.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <marker date="1552224579046" expanded="false" signature="6:402" ph="..." />
-            <marker date="1552224579046" expanded="true" signature="428:1185" ph="{...}" />
-            <marker date="1552224579046" expanded="true" signature="452:1183" ph="{...}" />
-            <marker date="1552224579046" expanded="true" signature="502:544" ph="{...}" />
-            <marker date="1552224579046" expanded="true" signature="749:837" ph="{...}" />
-            <marker date="1552224579046" expanded="true" signature="1013:1180" ph="{...}" />
-            <marker date="1552224579046" expanded="true" signature="1045:1092" ph="{...}" />
-            <marker date="1552224579046" expanded="true" signature="1100:1129" ph="{...}" />
-          </folding>
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BB91A3B0-EC25-4BCD-83F8-847D0DD10249/24/ebac3d5e/HttpRequestException.cs">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C0A7D087-4053-4171-AB91-0714F1364F0D/e0/151b6427/String.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+        <state relative-caret-position="345">
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ED07561A-F00F-4966-8EBC-547EA3E7CE17/87/fdedfa83/ControllerBase.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="63" column="24" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ServerPenAudio/Code/CookieManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="195">
+          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
           <folding>
-            <marker date="1552226231461" expanded="true" signature="29:142" ph="{...}" />
-            <marker date="1552226231461" expanded="true" signature="69:140" ph="{...}" />
+            <marker date="1552256382664" expanded="true" signature="63:466" ph="{...}" />
+            <marker date="1552256382664" expanded="true" signature="103:464" ph="{...}" />
+            <marker date="1552256382664" expanded="true" signature="240:458" ph="{...}" />
+            <marker date="1552256382664" expanded="true" signature="395:446" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PenAudio.Tests/UnitTest1.cs">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AC88FF9-9817-4BE7-8F0D-6AB05B5F222B/2d/cb1c603c/ConfigureServicesBuilder.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
+        <state relative-caret-position="388">
+          <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AC88FF9-9817-4BE7-8F0D-6AB05B5F222B/8e/98de4844/StartupLoader.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="167" column="10" selection-start-line="167" selection-start-column="10" selection-end-line="167" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6AC88FF9-9817-4BE7-8F0D-6AB05B5F222B/03/8bd28f02/WebHostBuilder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="149" column="29" lean-forward="true" selection-start-line="149" selection-start-column="29" selection-end-line="149" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServerPenAudio/Code/ConfigurationProvider.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
           <folding>
-            <marker date="1552226289424" expanded="true" signature="39:167" ph="{...}" />
-            <marker date="1552226289424" expanded="true" signature="61:165" ph="{...}" />
-            <marker date="1552226289424" expanded="true" signature="96:104" ph="{...}" />
-            <marker date="1552226289424" expanded="true" signature="136:162" ph="{...}" />
+            <marker date="1552256605125" expanded="true" signature="68:217" ph="{...}" />
+            <marker date="1552256605125" expanded="true" signature="134:215" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C58A7BDD-3F5A-468A-A1CE-25BBA6F36889/65/7d72e075/ConfigurationProvider.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServerPenAudio/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+          <folding>
+            <marker date="1552256601985" expanded="true" signature="6:444" ph="..." />
+            <marker date="1552256601985" expanded="true" signature="469:1336" ph="{...}" />
+            <marker date="1552256601985" expanded="true" signature="493:1334" ph="{...}" />
+            <marker date="1552256601985" expanded="true" signature="543:585" ph="{...}" />
+            <marker date="1552256601985" expanded="true" signature="790:988" ph="{...}" />
+            <marker date="1552256601985" expanded="true" signature="1164:1331" ph="{...}" />
+            <marker date="1552256601985" expanded="true" signature="1196:1243" ph="{...}" />
+            <marker date="1552256601985" expanded="true" signature="1251:1280" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServerPenAudio/Controllers/AudioController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+          <folding>
+            <marker date="1552256397773" expanded="true" signature="6:329" ph="..." />
+            <marker date="1552256397773" expanded="true" signature="366:1411" ph="{...}" />
+            <marker date="1552256397773" expanded="true" signature="459:1338" ph="{...}" />
+            <marker date="1552256397773" expanded="true" signature="636:699" ph="{...}" />
+            <marker date="1552256397773" expanded="true" signature="756:780" ph="{...}" />
+            <marker date="1552256397773" expanded="true" signature="863:1335" ph="{...}" />
+            <marker date="1552256397773" expanded="true" signature="1364:1409" ph="{...}" />
           </folding>
         </state>
       </provider>
