@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerPenAudio", "ServerPenAudio\ServerPenAudio.csproj", "{169ACA65-AFAA-4DAD-BC60-B4CCC0874268}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PenAudio.Tests", "PenAudio.Tests\PenAudio.Tests.csproj", "{4A3324EF-1B02-477D-8C4C-21F0F3F45DD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{169ACA65-AFAA-4DAD-BC60-B4CCC0874268}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{169ACA65-AFAA-4DAD-BC60-B4CCC0874268}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{169ACA65-AFAA-4DAD-BC60-B4CCC0874268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A3324EF-1B02-477D-8C4C-21F0F3F45DD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A3324EF-1B02-477D-8C4C-21F0F3F45DD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A3324EF-1B02-477D-8C4C-21F0F3F45DD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A3324EF-1B02-477D-8C4C-21F0F3F45DD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
