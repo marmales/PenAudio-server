@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "F:\\PenAudio-server\\PenAudio.Tests\\PenAudio.Tests.csproj",
+    "projectUniqueName": "C:\\Source\\PenAudio-server\\PenAudio.Tests\\PenAudio.Tests.csproj",
     "projectName": "PenAudio.Tests",
-    "projectPath": "F:\\PenAudio-server\\PenAudio.Tests\\PenAudio.Tests.csproj",
-    "outputPath": "F:\\PenAudio-server\\PenAudio.Tests\\obj\\",
+    "projectPath": "C:\\Source\\PenAudio-server\\PenAudio.Tests\\PenAudio.Tests.csproj",
+    "outputPath": "C:\\Source\\PenAudio-server\\PenAudio.Tests\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,7 +1,5 @@
 ServerPenAudio/bin
 ServerPenAudio/out
 ServerPenAudio/obj
-PenAudio.Tests/bin
-PenAudio.Tests/obj
-obj
-bin
+.idea
+.vs
