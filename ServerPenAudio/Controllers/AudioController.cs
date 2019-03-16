@@ -4,18 +4,23 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ServerPenAudio.Code;
+using Microsoft.Extensions.DependencyInjection;
 using penAudioInterfaces = ServerPenAudio.Code.Interfaces;
+using ServerPenAudio.Models;
+
 namespace ServerPenAudio.Controllers
 {
 	[Route("audio/[action]")]
 	[ApiController]
 	public class AudioController : ControllerBase
 	{
-		private penAudioInterfaces.IConfigurationProvider configurationProvider { get; }
+		private penAudioInterfaces.IConfigurationProvider configurationProvider;
+		private penAudioInterfaces.IAudioManager audioManager;
 
-		public AudioController(penAudioInterfaces.IConfigurationProvider configurationProvider)
+		public AudioController(IServiceProvider serviceProvider)
 		{
-			this.configurationProvider = configurationProvider;
+			this.configurationProvider = serviceProvider.GetService<penAudioInterfaces.IConfigurationProvider>();
+			this.audioManager = serviceProvider.GetService<penAudioInterfaces.IAudioManager>();
 		}
 
 		
@@ -27,26 +32,17 @@ namespace ServerPenAudio.Controllers
 		[HttpPost]
 		public async Task<ActionResult> Upload([FromForm] AudioModel audio)
 		{
-			if (audio == null || audio.Audio.Length <= 0)
+			if (audio == null || audio.HttpFile.Length <= 0)
 				return BadRequest();
 
-			var audioId = Guid.NewGuid().ToString();
-			var filePath = Path.Combine(
-				configurationProvider.AudioFolderLocation, 
-				$"{audioId}.{Path.GetExtension(audio.Audio.FileName)}"
-				);
-			
-			
-			using (var stream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
-				await audio.Audio.CopyToAsync(stream);
-
+			var audioId = await audioManager.SaveAudioAsync(audio.HttpFile);
 			CookieManager.AddCookie(Response, audioId);
 			return Ok();
 		}
-	}
-
-	public class AudioModel
-	{
-		public IFormFile Audio { get; set; }
+		[HttpGet]
+		public async Task<ActionResult> Get()
+		{
+			return Ok();
+		}
 	}
 }

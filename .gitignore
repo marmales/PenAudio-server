@@ -1,5 +1,5 @@
-ServerPenAudio/bin
-ServerPenAudio/out
-ServerPenAudio/obj
+*/bin
+*/out
+*/obj
 .idea
 .vs
