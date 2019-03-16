@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using penInterfaces = ServerPenAudio.Code.Interfaces;
 using penImplementation = ServerPenAudio.Code;
 namespace ServerPenAudio
@@ -22,8 +23,6 @@ namespace ServerPenAudio
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
 			services.Configure<penImplementation.ConfigurationProvider>(Configuration.GetSection("configurationProvider"));
-
-			services.AddScoped<penInterfaces.IConfigurationProvider, penImplementation.ConfigurationProvider>();
 			services.AddScoped<penInterfaces.IAudioManager, penImplementation.AudioManager>();
 		}
 

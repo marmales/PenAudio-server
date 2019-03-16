@@ -5,15 +5,16 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Options;
 
 namespace ServerPenAudio.Code
 {
 	public class AudioManager : IAudioManager
 	{
-		private IConfigurationProvider provider;
-		public AudioManager(IConfigurationProvider provider)
+		private ConfigurationProvider provider;
+		public AudioManager(IOptions<ConfigurationProvider> options)
 		{
-			this.provider = provider;
+			this.provider = options.Value;
 		}
 		public async Task<byte[]> GetAudioAsync(string audioId)
 		{
@@ -21,10 +22,12 @@ namespace ServerPenAudio.Code
 			if (string.IsNullOrEmpty(file))
 				return null;
 
-			byte[] buffer = null;
 			using (var stream = new FileStream(file, FileMode.Open, FileAccess.Read))
-				await stream.ReadAsync(buffer);
-			return buffer;
+			{
+				byte[] buffer = new byte[stream.Length];
+				await stream.ReadAsync(buffer, 0, buffer.Length);
+				return buffer;
+			}
 		}
 
 		public async Task<string> SaveAudioAsync(IFormFile audio)

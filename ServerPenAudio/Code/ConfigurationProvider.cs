@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ServerPenAudio.Code
 {
-	public class ConfigurationProvider : IConfigurationProvider
+	public class ConfigurationProvider
 	{
 		public string AudioFolderLocation { get; set; }
 	}

@@ -10,7 +10,7 @@ namespace PenAudio.Tests
 		[Test]
 		public void AudioFolderExist()
 		{
-			IConfigurationProvider configuration = new ConfigurationProvider();
+			var configuration = new ConfigurationProvider();
 
 			var folder = configuration.AudioFolderLocation;
 			var files = Directory.GetFiles(folder);

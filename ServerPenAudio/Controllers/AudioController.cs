@@ -1,10 +1,9 @@
 ﻿using System;
-using System.IO;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ServerPenAudio.Code;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using penAudioInterfaces = ServerPenAudio.Code.Interfaces;
 using ServerPenAudio.Models;
 
@@ -14,18 +13,18 @@ namespace ServerPenAudio.Controllers
 	[ApiController]
 	public class AudioController : ControllerBase
 	{
-		private penAudioInterfaces.IConfigurationProvider configurationProvider;
+		private ConfigurationProvider configurationProvider;
 		private penAudioInterfaces.IAudioManager audioManager;
 
 		public AudioController(IServiceProvider serviceProvider)
 		{
-			this.configurationProvider = serviceProvider.GetService<penAudioInterfaces.IConfigurationProvider>();
 			this.audioManager = serviceProvider.GetService<penAudioInterfaces.IAudioManager>();
+			this.configurationProvider = serviceProvider.GetService<IOptions<ConfigurationProvider>>().Value;
 		}
 
 		
 		[HttpGet]
-		public async Task<ActionResult> Test()
+		public ActionResult Test()
 		{
 			return Ok();
 		}
@@ -42,6 +41,11 @@ namespace ServerPenAudio.Controllers
 		[HttpGet]
 		public async Task<ActionResult> Get()
 		{
+			if (!Request.Cookies.ContainsKey(CookieManager.AudioKey))
+				return BadRequest();
+
+			var audioStream = await audioManager.GetAudioAsync(Request.Cookies[CookieManager.AudioKey]);
+
 			return Ok();
 		}
 	}
