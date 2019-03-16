@@ -31,12 +31,18 @@
         <e p="Code" t="Include">
           <e p="ConfigurationProvider.cs" t="Include" />
           <e p="CookieManager.cs" t="Include" />
+          <e p="DatabaseContext.cs" t="Include" />
           <e p="Interfaces" t="Include">
             <e p="IConfigurationProvider.cs" t="Include" />
           </e>
         </e>
         <e p="Controllers" t="Include">
           <e p="AudioController.cs" t="Include" />
+        </e>
+        <e p="Migrations" t="Include">
+          <e p="20190312221004_migration1.cs" t="Include" />
+          <e p="20190312221004_migration1.Designer.cs" t="Include" />
+          <e p="DatabaseContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -51,7 +57,6 @@
         </e>
         <e p="ServerPenAudio.csproj" t="IncludeRecursive" />
         <e p="Startup.cs" t="Include" />
-        <e p="wwwroot" t="Include" />
       </e>
     </e>
   </component>
