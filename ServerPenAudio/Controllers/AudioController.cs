@@ -4,8 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 using ServerPenAudio.Code;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
-using penAudioInterfaces = ServerPenAudio.Code.Interfaces;
+using ServerPenAudio.Code.Interfaces;
 using ServerPenAudio.Models;
+using ServerPenAudio.Code.Extensions;
 
 namespace ServerPenAudio.Controllers
 {
@@ -14,12 +15,14 @@ namespace ServerPenAudio.Controllers
 	public class AudioController : ControllerBase
 	{
 		private ConfigurationProvider configurationProvider;
-		private penAudioInterfaces.IAudioManager audioManager;
+		private IAudioManager audioManager;
 
 		public AudioController(IServiceProvider serviceProvider)
 		{
-			this.audioManager = serviceProvider.GetService<penAudioInterfaces.IAudioManager>();
-			this.configurationProvider = serviceProvider.GetService<IOptions<ConfigurationProvider>>().Value;
+			this.audioManager = serviceProvider.GetService(typeof(IAudioManager))
+				.Cast<IAudioManager>();
+			this.configurationProvider = serviceProvider.GetService(typeof(IOptions<ConfigurationProvider>))
+				.Cast<IOptions<ConfigurationProvider>>()?.Value;
 		}
 
 		
@@ -31,7 +34,7 @@ namespace ServerPenAudio.Controllers
 		[HttpPost]
 		public async Task<ActionResult> Upload([FromForm] AudioModel audio)
 		{
-			if (audio == null || audio.HttpFile.Length <= 0)
+			if (!ModelState.IsValid)
 				return BadRequest();
 
 			var audioId = await audioManager.SaveAudioAsync(audio.HttpFile);

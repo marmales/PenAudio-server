@@ -8,6 +8,6 @@ namespace ServerPenAudio.Code
 {
 	public class ConfigurationProvider
 	{
-		public string AudioFolderLocation { get; set; }
+		public virtual string AudioFolderLocation { get; set; }
 	}
 }
