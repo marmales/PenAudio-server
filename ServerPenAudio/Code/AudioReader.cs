@@ -11,6 +11,7 @@ namespace ServerPenAudio.Code
 {
 	public class AudioManager : IAudioManager
 	{
+		private const string AUDIONAME = "audio";
 		private ConfigurationProvider provider;
 		public AudioManager(IOptions<ConfigurationProvider> options)
 		{
@@ -18,7 +19,10 @@ namespace ServerPenAudio.Code
 		}
 		public async Task<byte[]> GetAudioAsync(string audioId)
 		{
-			var file = Directory.GetFiles(provider.AudioFolderLocation).SingleOrDefault(x => Path.GetFileName(x).Equals(audioId, StringComparison.InvariantCulture));
+			var file = 
+				Directory.GetFiles(Path.Combine(provider.AudioFolderLocation, audioId))
+				.FirstOrDefault(dirFilePath => string.Equals(AUDIONAME, Path.GetFileNameWithoutExtension(dirFilePath)));
+
 			if (string.IsNullOrEmpty(file))
 				return null;
 
@@ -33,7 +37,8 @@ namespace ServerPenAudio.Code
 		public async Task<string> SaveAudioAsync(IFormFile audio)
 		{
 			var audioId = Guid.NewGuid().ToString();
-			var filePath = Path.Combine(provider.AudioFolderLocation, $"{audioId}.{Path.GetExtension(audio.FileName)}");
+			var newDirectory = Directory.CreateDirectory(Path.Combine(provider.AudioFolderLocation, audioId));
+			var filePath = Path.Combine(newDirectory.FullName, $"{AUDIONAME}{Path.GetExtension(audio.FileName)}");
 			using (var stream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
 				await audio.CopyToAsync(stream);
 			

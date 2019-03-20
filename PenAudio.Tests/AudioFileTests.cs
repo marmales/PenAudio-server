@@ -86,12 +86,12 @@ namespace PenAudio.Tests
 		}
         private Mock<HttpRequest> CreateValidRequest()
 		{
-			var cookieCollection = new Mock<IRequestCookieCollection>();
-			cookieCollection.Setup(x => x.ContainsKey(It.IsAny<string>()))
-				.Returns(true);
-			cookieCollection.Setup(x => x.TryGetValue()) //TODO: check how to mock out parametres
-			var mock = new Mock<HttpRequest>();
-			
+			//var cookieCollection = new Mock<IRequestCookieCollection>();
+			//cookieCollection.Setup(x => x.ContainsKey(It.IsAny<string>()))
+			//	.Returns(true);
+			//cookieCollection.Setup(x => x.TryGetValue()) //TODO: check how to mock out parametres
+			//var mock = new Mock<HttpRequest>();
+			return null;
 		}
         [Test]
         public async Task ThrowBadRequestForNonAudioUpload()
