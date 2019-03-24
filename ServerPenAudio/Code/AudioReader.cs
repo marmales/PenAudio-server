@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Options;
 using ServerPenAudio.Code.Interfaces;
+using ServerPenAudio.Models;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Options;
 
 namespace ServerPenAudio.Code
 {
@@ -15,33 +15,50 @@ namespace ServerPenAudio.Code
 		private ConfigurationProvider provider;
 		public AudioManager(IOptions<ConfigurationProvider> options)
 		{
-			this.provider = options.Value;
+			provider = options.Value;
 		}
-		public async Task<byte[]> GetAudioAsync(string audioId)
+		public async Task<FileInformationResponse> GetAudioAsync(string audioId)
 		{
-			var file = 
-				Directory.GetFiles(Path.Combine(provider.AudioFolderLocation, audioId))
-				.FirstOrDefault(dirFilePath => string.Equals(AUDIONAME, Path.GetFileNameWithoutExtension(dirFilePath)));
+			var targetFolder = Path.Combine(provider.AudioFolderLocation, audioId);
+
+			if (!Directory.Exists(targetFolder))
+			{
+				return null;
+			}
+
+			var file =
+				Directory.GetFiles(Path.Combine(provider.AudioFolderLocation, audioId)).
+				FirstOrDefault(dirFilePath => string.Equals(AUDIONAME, Path.GetFileNameWithoutExtension(dirFilePath)));
 
 			if (string.IsNullOrEmpty(file))
+			{
 				return null;
+			}
 
 			using (var stream = new FileStream(file, FileMode.Open, FileAccess.Read))
 			{
 				byte[] buffer = new byte[stream.Length];
 				await stream.ReadAsync(buffer, 0, buffer.Length);
-				return buffer;
+				var response = new FileInformationResponse()
+				{
+					FileName = Path.GetFileNameWithoutExtension(stream.Name),
+					Content = buffer
+				};
+				return response;
 			}
 		}
+
 
 		public async Task<string> SaveAudioAsync(IFormFile audio)
 		{
 			var audioId = Guid.NewGuid().ToString();
 			var newDirectory = Directory.CreateDirectory(Path.Combine(provider.AudioFolderLocation, audioId));
-			var filePath = Path.Combine(newDirectory.FullName, $"{AUDIONAME}{Path.GetExtension(audio.FileName)}");
+			var filePath = Path.Combine(newDirectory.FullName, $"{Path.GetFileName(audio.FileName)}");
 			using (var stream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
+			{
 				await audio.CopyToAsync(stream);
-			
+			}
+
 			return audioId;
 		}
 	}

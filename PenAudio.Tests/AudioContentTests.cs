@@ -48,20 +48,26 @@ namespace PenAudio.Tests
 		[Test]
 		public async Task IsFolderCreatedOnFileUpload()
 		{
-			var audio = AsMockIFormFile(new FileInfo(Path.Combine(containerDirectory, "test.mp3")));
-			var audioCopyName = "audio.mp3";
+			try
+			{
+				var audioCopyName = "test.mp3";
+				var audio = AsMockIFormFile(new FileInfo(Path.Combine(containerDirectory, "test.mp3")));
 
-			var result = await audioReader.SaveAudioAsync(audio);
-			var createdDirectory = Path.Combine(containerDirectory, result);
-			var filePath = Path.Combine(createdDirectory, audioCopyName);
+				var result = await audioReader.SaveAudioAsync(audio);
+				var createdDirectory = Path.Combine(containerDirectory, result);
+				var filePath = Path.Combine(createdDirectory, audioCopyName);
 
-			Assert.That(createdDirectory, Is.Not.Null.And.Not.Empty);
-			Assert.That(filePath, Is.Not.Null.And.Not.Empty);
-			Assert.That(Directory.Exists(createdDirectory));
-			Assert.That(File.Exists(filePath));
-
+				Assert.That(createdDirectory, Is.Not.Null.And.Not.Empty);
+				Assert.That(filePath, Is.Not.Null.And.Not.Empty);
+				Assert.That(Directory.Exists(createdDirectory));
+				Assert.That(File.Exists(filePath));
+			}
+			finally
+			{
+				foreach(var dir in Directory.GetDirectories(containerDirectory))
+					TryRemoveDirectory(dir);
+			}
 			//Delete
-			TryRemoveDirectory(createdDirectory);
 		}
 
 
@@ -78,7 +84,42 @@ namespace PenAudio.Tests
 
 				var file = await audioReader.GetAudioAsync(guidid);
 
-				Assert.That(file, Is.Not.Null.And.Not.Empty);
+				Assert.That(file.FileName, Is.Not.Null.And.Not.Empty);
+				Assert.That(file.Content, Is.Not.Null.And.Not.Empty);
+
+			}
+			catch { Assert.Fail(); }
+			finally { TryRemoveDirectory(audioDirectory); }
+		}
+
+		[Test]
+		public async Task ReturnNullWhenInvalidIdProvided()
+		{
+			var guidid = "guid";
+			var audioDirectory =Path.Combine(containerDirectory, guidid);
+			try
+			{
+				TryRemoveDirectory(audioDirectory);
+
+				var file = await audioReader.GetAudioAsync(guidid);
+
+				Assert.That(file, Is.Null);
+			}
+			catch { Assert.Fail(); }
+		}
+		[Test]
+		public async Task ReturnNullWhenAudioIsMissing()
+		{
+			var guidid = "guid";
+			var audioDirectory = Path.Combine(containerDirectory, guidid);
+			try
+			{
+				TryRemoveDirectory(audioDirectory);
+				var directory = Directory.CreateDirectory(audioDirectory);
+
+				var file = await audioReader.GetAudioAsync(guidid);
+
+				Assert.That(file, Is.Null);
 
 			}
 			catch { Assert.Fail(); }

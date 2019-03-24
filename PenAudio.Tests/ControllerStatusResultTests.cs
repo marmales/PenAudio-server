@@ -15,12 +15,12 @@ using ServerPenAudio.Models;
 
 namespace PenAudio.Tests
 {
-    public class AudioFileTests
+    public class ControllerStatusResultTests
     {
 		private HttpContext context;
         private IServiceProvider provider;
-		private string directory = "./FileContainer";
-		private string audioName = "./test.mp3";
+		private string directory = "FileContainer";
+		private string audioName = "test.mp3";
 		[SetUp]
         public void Init()
         {
@@ -56,8 +56,14 @@ namespace PenAudio.Tests
 			mockedAudio.Setup(x => x.SaveAudioAsync(
 				It.Is<IFormFile>(y => Path.GetExtension(y.FileName).Equals("mp3"))))
 				.ThrowsAsync(new InvalidDataException());
-            mockedAudio.Setup(x => x.GetAudioAsync(audioName))
-				.ReturnsAsync(File.ReadAllBytes(Path.Combine(directory, audioName)));
+			mockedAudio.Setup(x => x.GetAudioAsync(audioName))
+				.ReturnsAsync(
+					new FileInformationResponse
+					{
+						Content = File.ReadAllBytes(Path.Combine(directory, audioName)),
+						FileName = Path.GetFileNameWithoutExtension(audioName)
+					}
+				);
 
             return mockedAudio.Object;
         }

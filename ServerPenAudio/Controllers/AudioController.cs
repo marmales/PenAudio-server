@@ -47,9 +47,12 @@ namespace ServerPenAudio.Controllers
 			if (!Request.Cookies.ContainsKey(CookieManager.AudioKey))
 				return BadRequest();
 
-			var audioStream = await audioManager.GetAudioAsync(Request.Cookies[CookieManager.AudioKey]);
+			var response = await audioManager.GetAudioAsync(Request.Cookies[CookieManager.AudioKey]);
 
-			return Ok();
+			if (response == null)
+				return NoContent();
+
+			return Ok(response);
 		}
 	}
 }
