@@ -9,63 +9,63 @@ using System.Threading.Tasks;
 
 namespace ServerPenAudio.Code
 {
-	public class AudioManager : IAudioManager
-	{
-		private const string AUDIONAME = "audio";
-		private ConfigurationProvider provider;
-		public AudioManager(IOptions<ConfigurationProvider> options)
-		{
-			provider = options.Value;
-		}
-		public async Task<CurrentFileModel> GetAudioAsync(string audioId)
-		{
-			var targetFolder = Path.Combine(provider.AudioFolderLocation, audioId);
+    public class AudioManager : IAudioManager
+    {
+        private const string AUDIONAME = "audio";
+        private ConfigurationProvider provider;
 
-			if (!Directory.Exists(targetFolder))
-			{
-				return null;
-			}
+        public AudioManager(IOptions<ConfigurationProvider> options)
+        {
+            provider = options.Value;
+        }
 
-			var file =
-				Directory.GetFiles(Path.Combine(provider.AudioFolderLocation, audioId)).
-				FirstOrDefault(dirFilePath => string.Equals(AUDIONAME, Path.GetFileNameWithoutExtension(dirFilePath)));
+        public async Task<CurrentFileModel> GetAudioAsync(string audioId)
+        {
+            var targetFolder = Path.Combine(provider.AudioFolderLocation, audioId);
 
-			if (string.IsNullOrEmpty(file))
-			{
-				return null;
-			}
+            if (!Directory.Exists(targetFolder))
+                return null;
 
-			using (var stream = new FileStream(file, FileMode.Open, FileAccess.Read))
-			{
-				byte[] buffer = new byte[stream.Length];
-				await stream.ReadAsync(buffer, 0, buffer.Length);
-				var response = new CurrentFileModel()
-				{
-					Title = Path.GetFileNameWithoutExtension(stream.Name)
-				};
-				return response;
-			}
-		}
+            var file = Directory.GetFiles(
+                    targetFolder,
+                    "*.*",
+                    SearchOption.TopDirectoryOnly)
+                .First();
+
+            if (string.IsNullOrEmpty(file))
+                return null;
+
+            using (var stream = new FileStream(file, FileMode.Open, FileAccess.Read))
+            {
+                byte[] buffer = new byte[stream.Length];
+                await stream.ReadAsync(buffer, 0, buffer.Length);
+                var response = new CurrentFileModel()
+                {
+                    Title = Path.GetFileNameWithoutExtension(stream.Name)
+                };
+                return response;
+            }
+        }
 
 
-		public async Task<UploadedModel> SaveAudioAsync(IFormFile audio)
-		{
-			var audioId = Guid.NewGuid().ToString();
-			var fileTitle = Path.GetFileNameWithoutExtension(audio.FileName);
-			var parentDirectory = Directory.CreateDirectory(Path.Combine(provider.AudioFolderLocation, audioId));
-			var filePath = Path.Combine(parentDirectory.FullName, $"{fileTitle}{Path.GetExtension(audio.FileName)}");
-			
-			using (var stream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
-				await audio.CopyToAsync(stream);
+        public async Task<UploadedModel> SaveAudioAsync(IFormFile audio)
+        {
+            var audioId = Guid.NewGuid().ToString();
+            var fileTitle = Path.GetFileNameWithoutExtension(audio.FileName);
+            var parentDirectory = Directory.CreateDirectory(Path.Combine(provider.AudioFolderLocation, audioId));
+            var filePath = Path.Combine(parentDirectory.FullName, $"{fileTitle}{Path.GetExtension(audio.FileName)}");
 
-			return new UploadedModel()
-			{
-				AudioId = audioId,
-				File = new CurrentFileModel()
-				{
-					Title = fileTitle
-				}
-			};
-		}
-	}
+            using (var stream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
+                await audio.CopyToAsync(stream);
+
+            return new UploadedModel()
+            {
+                AudioId = audioId,
+                File = new CurrentFileModel()
+                {
+                    Title = fileTitle
+                }
+            };
+        }
+    }
 }

@@ -31,7 +31,8 @@ namespace ServerPenAudio.Code.Attributes
 			"audio/mp4",
 			"audio/x-aiff",
 			"audio/x-mpegurl",
-			"audio/vnd.wav"
+			"audio/vnd.wav",
+			"audio/wav"
 		};
 	}
 }

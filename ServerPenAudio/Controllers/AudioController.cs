@@ -36,22 +36,21 @@ namespace ServerPenAudio.Controllers
 		}
 		[HttpPost]
 		public async Task<ActionResult> Upload(
-			[AudioContentType("NotSupported MIME type")] IFormFile audio
-			)
+			[AudioContentType("NotSupported MIME type")] IFormFile audio)
 		{
 			if (!ModelState.IsValid)
 				return BadRequest();
 
 			var result = await audioManager.SaveAudioAsync(audio);
-			CookieManager.AddCookie(Respo nse, result.AudioId);
+			CookieManager.AddCookie(Response, result.AudioId);
 
 			return Ok(result.File);
 		}
 		[HttpGet]
 		public async Task<ActionResult> Get()
-		{
+		{	
 			if (!Request.Cookies.ContainsKey(CookieManager.AudioKey))
-				return BadRequest();
+				return BadRequest($"Cannot find {CookieManager.AudioKey} cookie");
 
 			var response = await audioManager.GetAudioAsync(Request.Cookies[CookieManager.AudioKey]);
 
