@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ServerPenAudio.Code;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
+using ServerPenAudio.Code.Attributes;
 using ServerPenAudio.Code.Interfaces;
 using ServerPenAudio.Models;
 using ServerPenAudio.Code.Extensions;
@@ -11,7 +14,7 @@ using ServerPenAudio.Code.Extensions;
 namespace ServerPenAudio.Controllers
 {
 	[Route("audio/[action]")]
-	[ApiController]
+	[AllowAnonymous]
 	public class AudioController : ControllerBase
 	{
 		private ConfigurationProvider configurationProvider;
@@ -32,14 +35,17 @@ namespace ServerPenAudio.Controllers
 			return Ok();
 		}
 		[HttpPost]
-		public async Task<ActionResult> Upload([FromForm] AudioModel audio)
+		public async Task<ActionResult> Upload(
+			[AudioContentType("NotSupported MIME type")] IFormFile audio
+			)
 		{
 			if (!ModelState.IsValid)
 				return BadRequest();
 
-			var audioId = await audioManager.SaveAudioAsync(audio.HttpFile);
-			CookieManager.AddCookie(Response, audioId);
-			return Ok();
+			var result = await audioManager.SaveAudioAsync(audio);
+			CookieManager.AddCookie(Respo nse, result.AudioId);
+
+			return Ok(result.File);
 		}
 		[HttpGet]
 		public async Task<ActionResult> Get()

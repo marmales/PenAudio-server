@@ -46,7 +46,7 @@ namespace PenAudio.Tests
 		}
 
 		[Test]
-		public async Task IsFolderCreatedOnFileUpload()
+		public async Task IsFolderAndFileCreatedOnFileUpload()
 		{
 			try
 			{
