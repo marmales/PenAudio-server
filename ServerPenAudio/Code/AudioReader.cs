@@ -19,7 +19,7 @@ namespace ServerPenAudio.Code
             provider = options.Value;
         }
 
-        public async Task<CurrentFileModel> GetAudioAsync(string audioId)
+        public async Task<FileModel> GetAudioAsync(string audioId)
         {
             var targetFolder = Path.Combine(provider.AudioFolderLocation, audioId);
 
@@ -39,11 +39,14 @@ namespace ServerPenAudio.Code
             {
                 byte[] buffer = new byte[stream.Length];
                 await stream.ReadAsync(buffer, 0, buffer.Length);
-                var response = new CurrentFileModel()
+                return new FileModel()
                 {
-                    Title = Path.GetFileNameWithoutExtension(stream.Name)
+                    Information = new FileInformationModel
+                    {
+                        Title = Path.GetFileNameWithoutExtension(stream.Name)
+                    },
+                    Data = buffer
                 };
-                return response;
             }
         }
 
@@ -61,7 +64,7 @@ namespace ServerPenAudio.Code
             return new UploadedModel()
             {
                 AudioId = audioId,
-                File = new CurrentFileModel()
+                FileInformation = new FileInformationModel()
                 {
                     Title = fileTitle
                 }

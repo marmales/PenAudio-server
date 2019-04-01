@@ -22,5 +22,13 @@ namespace ServerPenAudio.Code
 					HttpOnly = false
 				});
 		}
+
+		public static string GetAudioCookie(this HttpRequest request)
+		{
+			if (!request.Cookies.ContainsKey(AudioKey))
+				return null;
+
+			return request.Cookies[AudioKey];
+		}
     }
 }

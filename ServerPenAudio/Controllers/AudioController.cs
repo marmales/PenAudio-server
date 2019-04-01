@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -19,7 +20,7 @@ namespace ServerPenAudio.Controllers
 	{
 		private ConfigurationProvider configurationProvider;
 		private IAudioManager audioManager;
-
+		private IFrequencyManager frequencyManager;
 		public AudioController(IServiceProvider serviceProvider)
 		{
 			this.audioManager = serviceProvider.GetService(typeof(IAudioManager))
@@ -44,20 +45,43 @@ namespace ServerPenAudio.Controllers
 			var result = await audioManager.SaveAudioAsync(audio);
 			CookieManager.AddCookie(Response, result.AudioId);
 
-			return Ok(result.File);
+			return Ok(result.FileInformation);
 		}
+
+		[HttpGet]
+		public async Task<ActionResult> GetFrequencyDomain(FrequencyDomainOptions options)
+		{
+			var id = Request.GetAudioCookie();
+			if (string.IsNullOrEmpty(id))
+				return BadRequest($"Cannot find audio cookie");
+
+			var audio = await audioManager.GetAudioAsync(id);
+			if (audio == null)
+				return NoContent();
+			options.Data = audio.Data;
+
+			var liveGraphsData = await frequencyManager.GetFrequencyDomainAsync(options);
+			var response = new FrequencyGraphModel()
+			{
+				LeftData = liveGraphsData.First(x => x.Side == Channel.Left).Get(),
+				RightData = liveGraphsData.First(x => x.Side == Channel.Right).Get(),
+			};
+			return Ok(response);
+		}
+		
 		[HttpGet]
 		public async Task<ActionResult> Get()
-		{	
-			if (!Request.Cookies.ContainsKey(CookieManager.AudioKey))
+		{
+			var audioId = Request.GetAudioCookie();
+			if (string.IsNullOrEmpty(audioId))
 				return BadRequest($"Cannot find {CookieManager.AudioKey} cookie");
 
-			var response = await audioManager.GetAudioAsync(Request.Cookies[CookieManager.AudioKey]);
+			var response = await audioManager.GetAudioAsync(audioId);
 
 			if (response == null)
 				return NoContent();
 
-			return Ok(response);
+			return Ok(response.Information);
 		}
 	}
 }

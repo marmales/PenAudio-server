@@ -1,8 +1,10 @@
+using ServerPenAudio.Code.Interfaces;
+
 namespace ServerPenAudio.Models
 {
-    public class UploadedModel
+    public class UploadedModel : IAudio
     {
         public string AudioId { get; set; }
-        public CurrentFileModel File { get; set; }
+        public FileInformationModel FileInformation { get; set; }
     }
 }

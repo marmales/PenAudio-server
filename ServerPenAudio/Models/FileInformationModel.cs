@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ServerPenAudio.Models
 {
-	public class CurrentFileModel
+	public class FileInformationModel
 	{
 		public string Title { get; set; }
 	}

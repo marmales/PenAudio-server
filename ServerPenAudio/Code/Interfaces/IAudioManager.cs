@@ -10,6 +10,6 @@ namespace ServerPenAudio.Code.Interfaces
 	public interface IAudioManager
 	{
 		Task<UploadedModel> SaveAudioAsync(IFormFile file);
-		Task<CurrentFileModel> GetAudioAsync(string audioId);
+		Task<FileModel> GetAudioAsync(string audioId);
 	}
 }
